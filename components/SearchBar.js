@@ -23,6 +23,8 @@ import { View, Text, TextInput, StyleSheet, Button } from 'react-native'
             <TextInput 
                 placeholder="Vul een stad in" 
                 style={styles.input} 
+                value={city}
+                onChangeText = {(text)=> setCity(text)}
                 />
             <Button title="Zoek" onPress={() => getWeather()} />
         </View>
